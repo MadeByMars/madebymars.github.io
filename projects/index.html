@@ -31,7 +31,7 @@
 <meta property="og:description" content="I4: Incremental Inference of Inductive Invariants for Verification of Distributed ProtocolsDesigning and implementing distributed systems correctly is a very challenging task. Formal verification has">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-12-29T00:42:27.000Z">
-<meta property="article:modified_time" content="2021-01-02T07:03:50.108Z">
+<meta property="article:modified_time" content="2021-01-03T03:20:16.805Z">
 <meta property="article:author" content="Haojun Ma">
 <meta name="twitter:card" content="summary">
 
@@ -231,7 +231,7 @@
       
       
       <div class="post-body">
-          <h2 id="I4-Incremental-Inference-of-Inductive-Invariants-for-Verification-of-Distributed-Protocols"><a href="#I4-Incremental-Inference-of-Inductive-Invariants-for-Verification-of-Distributed-Protocols" class="headerlink" title="I4: Incremental Inference of Inductive Invariants for Verification of Distributed Protocols"></a>I4: Incremental Inference of Inductive Invariants for Verification of Distributed Protocols</h2><p>Designing and implementing distributed systems correctly is a very challenging task. Formal verification has been successfully used to prove the correctness of distributed systems. At the heart of formal verification lies a computer-checked proof with an inductive invariant. Finding this inductive invariant, however, is the most difficult part of the proof. Alas, current proof techniques require inductive invariants to be found manually—and painstakingly—by the developer. In this project we propose a new approach, Incremental Inference of Inductive Invariants (I4), to automatically generate inductive invariants for distributed protocols. The essence of our idea is simple: the inductive invariant of a finite instance of the protocol can be used to infer a general inductive invariant for the infinite distributed protocol. In I4, we create a finite instance of the protocol; use a model checking tool to automatically derive the inductive invariant for this finite instance; and generalize this invariant to an inductive invariant for the infinite protocol. Our experiments show that I4 can prove the correctness of several distributed protocols like Chord, 2PC and Transaction Chains with little to no human effort.</p>
+          <h2 id="I4-Incremental-Inference-of-Inductive-Invariants-for-Verification-of-Distributed-Protocols"><a href="#I4-Incremental-Inference-of-Inductive-Invariants-for-Verification-of-Distributed-Protocols" class="headerlink" title="I4: Incremental Inference of Inductive Invariants for Verification of Distributed Protocols"></a>I4: Incremental Inference of Inductive Invariants for Verification of Distributed Protocols</h2><p>Designing and implementing distributed systems correctly is a very challenging task. Formal verification has been successfully used to prove the correctness of distributed systems. At the heart of formal verification lies a computer-checked proof with an inductive invariant. Finding this inductive invariant, however, is the most difficult part of the proof. Alas, current proof techniques require inductive invariants to be found manually—and painstakingly—by the developer. In this project we propose a new approach, Incremental Inference of Inductive Invariants (I4), to automatically generate inductive invariants for distributed protocols. The essence of our idea is simple: the inductive invariant of a finite instance of the protocol can be used to infer a general inductive invariant for the infinite distributed protocol. In I4, we create a finite instance of the protocol; use a model checking tool to automatically derive the inductive invariant for this finite instance; and generalize this invariant to an inductive invariant for the infinite protocol. Our experiments show that I4 can prove the correctness of several distributed protocols like Chord, 2PC, and Transaction Chains with little to no human effort.</p>
 <h3 id="Publications"><a href="#Publications" class="headerlink" title="Publications"></a>Publications</h3><p><font size="3">Haojun Ma, Aman Goel, Jean-Baptiste Jeannin, Manos Kapritsos, Baris Kasikci, Karem A. Sakallah, <em>I4: Incremental Inference of Inductive Invariants for Verification of Distributed Protocols</em>, 27th ACM Symposium on Operating Systems Principles (SOSP ‘19) [<a href="/files/i4-sosp19.pdf">pdf</a>] [<a target="_blank" rel="noopener" href="https://sosp19.rcs.uwaterloo.ca/videos/D2-S3-P3.mp4">Video</a>] [<a target="_blank" rel="noopener" href="https://sosp19.rcs.uwaterloo.ca/slides/ma.pdf">Slides</a>]</font></p>
 <p><font size="3">Haojun Ma, Aman Goel, Jean-Baptiste Jeannin, Manos Kapritsos, Baris Kasikci, Karem A. Sakallah, <em>Towards Automatic Inference of Inductive Invariants</em>, 17th Workshop on Hot Topics in Operating Systems (HotOS ‘19) [<a href="/files/i4-hotos19.pdf">pdf</a>]</font></p>
 
@@ -245,6 +245,7 @@
     
 
 
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -306,6 +307,18 @@
 
 
 
+
+<script>
+NexT.utils.loadComments('#valine-comments', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
+    new Valine(Object.assign({"enable":true,"appId":"SNEjl8GoXfKoYjGjdz55piQI-MdYXbMMI","appKey":"oEWGc0MFuOEAxwYp0LilHtXI","serverURLs":null,"placeholder":"Just go go","avatar":"mm","meta":["nick","mail"],"pageSize":10,"visitor":false,"comment_count":true,"recordIP":false}, {
+      el: '#valine-comments',
+      path: "/projects/",
+      serverURLs: "https://snejl8go.api.lncldglobal.com"
+    }));
+  }, window.Valine);
+});
+</script>
 
 </body>
 </html>

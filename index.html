@@ -23,15 +23,15 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
-<meta name="description" content="I’m Haojun Ma, a Ph.D. candadite at University of Michigan working with Prof. Manos Kapritsos. In 2017, I got my bachelor’s degree from ACM Hornered Class at Shanghai Jiao Tong University. My research">
+<meta name="description" content="I’m Haojun Ma, a Ph.D. candidate at University of Michigan working with Prof. Manos Kapritsos. In 2017, I got my bachelor’s degree from ACM Hornered Class at Shanghai Jiao Tong University. My research">
 <meta property="og:type" content="website">
 <meta property="og:title" content="introduction">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="MadeByMars">
-<meta property="og:description" content="I’m Haojun Ma, a Ph.D. candadite at University of Michigan working with Prof. Manos Kapritsos. In 2017, I got my bachelor’s degree from ACM Hornered Class at Shanghai Jiao Tong University. My research">
+<meta property="og:description" content="I’m Haojun Ma, a Ph.D. candidate at University of Michigan working with Prof. Manos Kapritsos. In 2017, I got my bachelor’s degree from ACM Hornered Class at Shanghai Jiao Tong University. My research">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-01-02T07:12:40.710Z">
-<meta property="article:modified_time" content="2021-01-02T07:12:40.710Z">
+<meta property="article:published_time" content="2021-01-03T05:30:18.334Z">
+<meta property="article:modified_time" content="2021-01-03T05:30:18.334Z">
 <meta property="article:author" content="Haojun Ma">
 <meta name="twitter:card" content="summary">
 
@@ -230,8 +230,8 @@
       
       
       <div class="post-body">
-          <p>I’m Haojun Ma, a Ph.D. candadite at <a target="_blank" rel="noopener" href="https://cse.engin.umich.edu/">University of Michigan</a> working with <a target="_blank" rel="noopener" href="https://web.eecs.umich.edu/~manosk/index.html">Prof. Manos Kapritsos</a>. In 2017, I got my bachelor’s degree from <a target="_blank" rel="noopener" href="https://acm.sjtu.edu.cn/home">ACM Hornered Class</a> at <a target="_blank" rel="noopener" href="http://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a>.</p>
-<p>My research involves formal methods and distributed systems. I’m making formal verification of distributed systems more automatic. New, we can verify <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Paxos_(computer_science)">Paxos</a> with little to no manual effort. You can also check my <a href="/file/CV.pdf">CV</a>.</p>
+          <p>I’m Haojun Ma, a Ph.D. candidate at <a target="_blank" rel="noopener" href="https://cse.engin.umich.edu/">University of Michigan</a> working with <a target="_blank" rel="noopener" href="https://web.eecs.umich.edu/~manosk/index.html">Prof. Manos Kapritsos</a>. In 2017, I got my bachelor’s degree from <a target="_blank" rel="noopener" href="https://acm.sjtu.edu.cn/home">ACM Hornered Class</a> at <a target="_blank" rel="noopener" href="http://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a>.</p>
+<p>My research involves formal methods and distributed systems. I’m making formal verification of distributed systems more automatic. Now, we can verify <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Paxos_(computer_science)">Paxos</a> semi-automatically. You can also check my <a href="/file/CV.pdf">CV</a>.</p>
 
       </div>
       
@@ -243,6 +243,7 @@
     
 
 
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -304,6 +305,18 @@
 
 
 
+
+<script>
+NexT.utils.loadComments('#valine-comments', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
+    new Valine(Object.assign({"enable":true,"appId":"SNEjl8GoXfKoYjGjdz55piQI-MdYXbMMI","appKey":"oEWGc0MFuOEAxwYp0LilHtXI","serverURLs":null,"placeholder":"Just go go","avatar":"mm","meta":["nick","mail"],"pageSize":10,"visitor":false,"comment_count":true,"recordIP":false}, {
+      el: '#valine-comments',
+      path: "/",
+      serverURLs: "https://snejl8go.api.lncldglobal.com"
+    }));
+  }, window.Valine);
+});
+</script>
 
 </body>
 </html>
